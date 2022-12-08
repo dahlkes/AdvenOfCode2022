@@ -1,6 +1,6 @@
 use std::io;
 mod advent;
-use crate::advent::open_day_1;
+use crate::advent::*;
 
 fn main() -> io::Result<()> {
     println!("This is the advent of code 2022!");
@@ -19,7 +19,8 @@ fn main() -> io::Result<()> {
     
     match day {
         1 => open_day_1(),
-        2..=24 => println!("This day is not ready yet."),
+        2 => open_day_2(),
+        3..=24 => println!("This day is not ready yet."),
         _ => println!("You are out of advent."),
     };
 
