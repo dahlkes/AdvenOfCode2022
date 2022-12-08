@@ -1,4 +1,6 @@
 use std::io;
+mod advent;
+use crate::advent::open_day_1;
 
 fn main() -> io::Result<()> {
     println!("This is the advent of code 2022!");
@@ -16,7 +18,8 @@ fn main() -> io::Result<()> {
                         .expect("Input not an integer");
     
     match day {
-        1..=24 => println!("This day is not ready yet."),
+        1 => open_day_1(),
+        2..=24 => println!("This day is not ready yet."),
         _ => println!("You are out of advent."),
     };
 
